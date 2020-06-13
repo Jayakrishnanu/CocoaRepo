@@ -13,10 +13,16 @@ final class CocoaRepoTests: XCTestCase {
         let color = CocoaRepo.colorFromHexString("006736")
         XCTAssertEqual(color, CocoaRepo.cocoaColor)
     }
+    
+    func testSecondayColorAreEqual() {
+        let color = CocoaRepo.colorFromHexString("FCFCFD")
+        XCTAssertEqual(color, CocoaRepo.secondaryCocoColor)
+    }
 
     static var allTests = [
         ("testColorRedEqual", testColorRedColor),
-        ("testCocoaColorsAreEqual", testCocoaColorsAreEqual)
+        ("testCocoaColorsAreEqual", testCocoaColorsAreEqual),
+        ("testSecondayColorAreEqual", testSecondayColorAreEqual)
         
     ]
 }

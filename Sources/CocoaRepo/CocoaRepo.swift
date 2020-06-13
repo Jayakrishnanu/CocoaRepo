@@ -40,4 +40,10 @@ public class CocoaRepo {
         return self.colorFromHexString("006736")
     }
     
+    
+    /// secondary color for cocoa
+    public static var secondaryCocoColor: UIColor {
+        return self.colorFromHexString("FCFCFD")
+    }
+    
 }
