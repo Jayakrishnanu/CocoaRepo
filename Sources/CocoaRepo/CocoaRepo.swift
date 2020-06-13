@@ -1,6 +1,6 @@
 import UIKit
 
-class CocoaRepo {
+public class CocoaRepo {
     
     /// Converts hexastring value to uicolor
     /// - Warning - The # symbol is for the warning comments
