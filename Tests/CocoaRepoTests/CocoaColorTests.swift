@@ -1,22 +1,22 @@
 import XCTest
 @testable import CocoaRepo
 
-final class CocoaRepoTests: XCTestCase {
+final class CocoaColorTests: XCTestCase {
 
     
     func testColorRedColor() {
-        let color = CocoaRepo.colorFromHexString("FF0000")
+        let color = CocoaCore.Color.fromHexString("FF0000")
         XCTAssertEqual(color, .red)
     }
     
     func testCocoaColorsAreEqual() {
-        let color = CocoaRepo.colorFromHexString("006736")
-        XCTAssertEqual(color, CocoaRepo.cocoaColor)
+        let color = CocoaCore.Color.fromHexString("006736")
+        XCTAssertEqual(color, CocoaCore.Color.cocoaColor)
     }
     
     func testSecondayColorAreEqual() {
-        let color = CocoaRepo.colorFromHexString("FCFCFD")
-        XCTAssertEqual(color, CocoaRepo.secondaryCocoColor)
+        let color = CocoaCore.Color.fromHexString("FCFCFD")
+        XCTAssertEqual(color, CocoaCore.Color.secondaryCocoColor)
     }
 
     static var allTests = [
